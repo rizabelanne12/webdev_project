@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Source+Sans+Pro&display=swap');
+
+
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Jua', sans-serif;
+    font-family: 'Source Sans Pro',
+    
+}
+
+body
+{
+  background-position: center;     
+  background-image: url(background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.upper
+{
+  
+    padding: 20px 60px 40px 60px;
+    background: -webkit-linear-gradient(rgb(2, 127, 252), rgba(0, 162, 255, 0.74));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.upper .container
+{
+   display: flex;
+   justify-content: space-between;
+}
+
+.upper .container .small-letter
+{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    font-size: 20px;
+    
+} 
+
+.upper .container .big-letter
+{
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  
+}
+
+/* about mw */
+
+.about-me 
+{
+  border: 2px dotted rgb(235, 32, 171);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 20px 60px 40px 60px;
+   background: -webkit-linear-gradient(rgb(29, 150, 224), rgb(25, 105, 225));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+}
+
+.aboutme-pic  img 
+{ 
+    flex: 1 1 50%;
+    height: 450px;
+    width: 350px;    
+}
+
+.aboutme .container 
+{ 
+   
+    padding-top: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-content: end;
+    gap: 30px; 
+       
+}
+
+.aboutme .me
+{
+   
+    flex-basis: 50%;
+    flex: 1;
+    display: flex;
+
+}
+
+p
+{
+    padding-left:200px;
+    text-align:justify;
+}
+
+.aboutme .about
+{
+    flex-basis: 50%;
+    flex: 1;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+/* edu background */
+
+.eduBackground
+{
+  border: 2px dotted rgb(246, 4, 246);
+   padding: 10px 60px 40px 60px;
+   background: -webkit-linear-gradient(rgb(29, 150, 224), rgb(25, 105, 225));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 1px;
+}
+
+.eduBackground2 
+{ 
+  border: 2px dotted violet;
+  padding: 40px;
+  background: -webkit-linear-gradient(rgb(29, 150, 224), rgb(25, 105, 225));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+}
+
+.edupic1
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.edupic4
+{
+  display: flex;
+ 
+}
+
+.eduBackground2 img 
+{
+  padding: 5px;
+}
+
+.edupic1 h1
+{
+  padding-top: 30%;
+}
+
+.edupic2 p
+{
+  padding: 10px 0 0 0;
+}
+
+.edupic3 p
+{
+  padding: 10px 0 0 0;
+}
+
+.edupic5 p
+{
+  padding: 0;
+}
+
+.edupic1 img
+{
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+    object-position: 100% 0;
+ 
+  
+}
+
+.edupic2 img
+{
+    height: 300px;
+    width: 350px;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+.edupic3 img 
+{
+   height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+
+.page5 
+{
+  display: flex;
+  padding: 50px 20px 40px 10px;
+  background: -webkit-linear-gradient(rgb(29, 150, 224), rgb(25, 105, 225));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.qouteright 
+{
+ 
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  padding-top: 100px
+
+}
+
+.qoutep 
+{
+  padding:50px;
+  font-size: 60px;
+}
+
+.qoutep p
+{
+   text-align: left;
+   padding:0;
+}
+
+.qouteright img 
+{
+    height: 400px;
+    width: 350px;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+.qouteright p
+{
+  padding: 50px;
+  text-align: left;
+}
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
